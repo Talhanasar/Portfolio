@@ -334,3 +334,31 @@ body::-webkit-scrollbar-track-piece{
 .navbar li:hover .fa-solid{
     transform: rotate(180deg);
 }
+
+
+/* photo design */
+.disco{
+    position: relative;
+    padding: 2px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.disco::before{
+    content: '';
+    position: absolute;
+    height: 185px;
+    width: 70px;
+    top: -25px;
+    left: 30%;
+    z-index: -1;
+    background: linear-gradient(#00ccff,#d400d4);
+    animation: ghur-shala 3s linear infinite;
+}
+@keyframes ghur-shala{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
