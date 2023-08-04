@@ -353,6 +353,7 @@ body::-webkit-scrollbar-track-piece{
     z-index: -1;
     background: linear-gradient(#00ccff,#d400d4);
     animation: ghur-shala 3s linear infinite;
+    filter: blur(15px);
 }
 @keyframes ghur-shala{
     0%{
