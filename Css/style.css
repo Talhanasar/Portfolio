@@ -297,3 +297,40 @@ body::-webkit-scrollbar-button{
 body::-webkit-scrollbar-track-piece{
     background: rgb(18, 18, 18);
 }
+
+/* Drop down List */
+
+.sub-menu{
+    display: none;
+}
+.navbar li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background: rgb(56,56,57);
+    margin-top: 16px;
+    margin-left: -20px;
+}
+.navbar li:hover .sub-menu ul{
+    display: block;
+    padding: 0px 15px;
+}
+.navbar li:hover .sub-menu ul li{
+    color: white;
+    border-bottom: 1px dotted white;
+    padding: 20px 15px 10px 0px ;
+    text-align: left;
+    font-size: 0.8rem;
+}
+.navbar li:hover .sub-menu ul li:last-child{
+    border-bottom: none;
+}
+.navbar li:hover .sub-menu ul li:hover{
+    color: #d6d6d6b3;
+}
+.fa-solid{
+    margin-left: 10px;
+    transition: 0.5s;
+}
+.navbar li:hover .fa-solid{
+    transform: rotate(180deg);
+}
