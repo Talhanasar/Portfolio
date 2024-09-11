@@ -297,6 +297,10 @@ body::-webkit-scrollbar-button{
 body::-webkit-scrollbar-track-piece{
     background: rgb(18, 18, 18);
 }
+::selection{
+    color: black;
+    background-color: #f5d26c;
+}
 
 /* Drop down List */
 
@@ -353,7 +357,7 @@ body::-webkit-scrollbar-track-piece{
     z-index: -1;
     background: linear-gradient(#00ccff,#d400d4);
     animation: ghur-shala 3s linear infinite;
-    filter: blur(15px);
+    filter:blur(10px);
 }
 @keyframes ghur-shala{
     0%{
